@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "airbnb",
+    "next",
+    "next/core-web-vitals",
+    "plugin:tailwind/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "import/no-unresolved": "off"
+  }
+}

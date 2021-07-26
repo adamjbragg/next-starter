@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://website.com.au/sitemap.xml

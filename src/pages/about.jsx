@@ -1,0 +1,17 @@
+import Layout from '@/components/Layout';
+
+const Home = () => {
+  const meta = {
+    pageTitle: 'About',
+    pageDescription: 'About Page description',
+  };
+
+  return (
+    <Layout pageTitle={meta.pageTitle} pageDescription={meta.pageDescription}>
+      <h1 className="text-6xl font-bold">About</h1>
+      <p>This is the about page content</p>
+    </Layout>
+  );
+};
+
+export default Home;

@@ -1,0 +1,13 @@
+// enables Absolute Imports and Module path aliases
+// https://nextjs.org/docs/advanced-features/module-path-aliases
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@/components/*": ["components/*"],
+      "@/hooks/*": ["hooks/*"],
+      "@/data/*": ["data/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}
