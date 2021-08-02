@@ -12,7 +12,7 @@ const Layout = ({
   const canonicalURL = `${process.env.NEXT_PUBLIC_SITE_URL}/${router.pathname}`;
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="flex flex-col items-center justify-center min-h-screen">
       <NextSeo
         title={pageTitle}
         titleTemplate="AJB Next Start | %s"
@@ -20,7 +20,7 @@ const Layout = ({
         canonical={canonicalURL}
       />
       <Header />
-      <main className="flex flex-col items-center justify-center flex-1 w-full px-20 text-center">
+      <main className="flex flex-col items-center justify-center flex-1 w-full px-5 py-10 bg-gray-200">
         {children}
       </main>
       <Footer />
