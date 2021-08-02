@@ -1,3 +1,4 @@
-module.exports = {
-  target: 'serverless',
-};
+// uncomment if hosting on Netlify
+// module.exports = {
+//   target: 'serverless',
+// };
