@@ -20,7 +20,7 @@ const Layout = ({
         canonical={canonicalURL}
       />
       <Header />
-      <main className="flex flex-col items-center justify-center flex-1 w-full px-5 py-10 bg-gray-200">
+      <main className="container flex flex-col  justify-center flex-1 w-full px-5 py-10">
         {children}
       </main>
       <Footer />

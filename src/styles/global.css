@@ -8,19 +8,23 @@
   }
 
   h1 {
-    @apply text-3xl;
+    @apply text-6xl font-bold mb-5;
   }
 
   h2 {
-    @apply text-2xl;
+    @apply text-4xl mb-5;
   }
 
   h3 {
-    @apply text-xl font-bold text-red-500;
+    @apply text-xl font-bold  uppercase mb-2;
   }
 
   h4 {
-    @apply text-lg text-red-500;
+    @apply font-bold  mb-2;
+  }
+
+  p {
+    @apply mb-5;
   }
 
   a {
