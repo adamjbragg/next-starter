@@ -73,6 +73,7 @@ https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss
 ### To Do
 
 [ ] add api pages to read me
-[ ] set more consistant styling
+[ ] add consistant styling
 [ ] add in commonly used CMS settings? as branches?
-[ ] next image example?
+[ ] add next image example?
+[ ] add basic typograpical defaults
