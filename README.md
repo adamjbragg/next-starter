@@ -3,6 +3,12 @@
 Next starter for standard marketing sites that have SEO considerations.
 Does not include set up for CMS.
 
+## Setup
+
+- run `npm install`
+- find and replace `https://website.com.au`
+- find and replace `AJB Next Starter`
+
 ## Features
 
 ### CSS & Tailwind
@@ -14,32 +20,29 @@ https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss
 
 ### SRC Folder
 
-A `src` folder has been added to keep everything tidy.
+- `src` folder has been added to keep everything tidy.
 
 ### Absolute Imports
 
-I've configured absolute imports in the `jsconfig.json` file.
-https://nextjs.org/docs/advanced-features/module-path-aliases
+- absolute imports are configured in the `jsconfig.json` file.
+  https://nextjs.org/docs/advanced-features/module-path-aliases
 
 ### ESLint + Prettier
 
-ESLint is configured via https://nextjs.org/docs/basic-features/eslint
-
+- ESLint is configured via https://nextjs.org/docs/basic-features/eslint
 - this needs more documentation
 
 ### Layout
 
-Uses a global Layout component. Works well for sites with 1 main layout.
-https://nextjs.org/docs/basic-features/layouts
-
-further reading https://adamwathan.me/2019/10/17/persistent-layout-patterns-in-nextjs/
-
-- this approach doesn't cover how to update a pages meta, title etc.
+- Uses a global Layout component.
+- Works well for sites with 1 main layout.
+- further reading: https://nextjs.org/docs/basic-features/layouts
+- further reading https://adamwathan.me/2019/10/17/persistent-layout-patterns-in-nextjs/
+- _note!_ Adam Wathan's approach doesn't cover how to update a pages meta, title etc.
 
 ### SEO
 
-Uses https://github.com/garmeeh/next-seo for SEO
-
+- uses https://github.com/garmeeh/next-seo for SEO
 - `next-seo.config` contains defaults for OpenGraph but hasn't been configured fully.
 - `_app.jsx` contains a `<DefaultSeo {...SEO} />` that contains the defaults
 - `src/components/Layout.jsx` contains `<NextSEO>` main component which contains the title, description and canonical props.
@@ -47,30 +50,29 @@ Uses https://github.com/garmeeh/next-seo for SEO
 
 ### Environment Variables
 
-Contains both `env.development` and `env.production` to handle the baseURL that is passed to various components and the sitemap.
-
-IMPORTANT: don't put secrets in these files
-IMPORTANT: replace the production baseURL before build
-
-https://nextjs.org/docs/basic-features/environment-variables
+- contains `.env` file to hold site url.
+- has a template for .env.local for secrets.
+- further reading: https://nextjs.org/docs/basic-features/environment-variables
 
 ### Sitemap
 
-A sitemap is generated for static pages via this method: https://cheatcode.co/tutorials/how-to-generate-a-dynamic-sitemap-with-next-js#fetching-data-for-your-sitemap
-
-- worth looking into and replacing with `next-sitemap` for dynamic pages from a cms etc
-
-- Sitemap for Static pages https://cheatcode.co/tutorials/how-to-generate-a-dynamic-sitemap-with-next-js#fetching-data-for-your-sitemap
-- production and development .env files for different baseURLs for sitemap
+- sitemap is generated for static pages via `next-sitemap`.
+- `package.json` contains a `postbuild` step that builds the sitemap into the public folder.
+- also generates a robots.txt into the public folder
 
 ### Custom Document
 
-Added custom document to add hardcoded html lang attribute
+- custom document added to add hardcoded html lang attribute
+- further reading: https://nextjs.org/docs/advanced-features/custom-document
 
 ### Custom App
 
-Added custom app to add default SEO
+- custom app added to add default SEO
+- further reading: https://nextjs.org/docs/advanced-features/custom-app
 
 ### To Do
-[] fix sitemap
-[] fix environment variables / canonical etc
+
+[ ] add api pages to read me
+[ ] set more consistant styling
+[ ] add in commonly used CMS settings? as branches?
+[ ] next image example?
