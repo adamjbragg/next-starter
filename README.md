@@ -70,3 +70,7 @@ Added custom document to add hardcoded html lang attribute
 ### Custom App
 
 Added custom app to add default SEO
+
+### To Do
+[] fix sitemap
+[] fix environment variables / canonical etc
