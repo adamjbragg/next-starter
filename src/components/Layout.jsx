@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import { NextSeo } from 'next-seo';
-import Header from './Header';
+import Header from './header/Header';
 import Footer from './Footer';
 
 const Layout = ({
@@ -9,9 +9,7 @@ const Layout = ({
   pageTitle = 'Page Title',
 }) => {
   const router = useRouter();
-  const canonicalURL = `${process.env.NEXT_PUBLIC_baseURL}/${router.pathname}`;
-
-  console.log(process.env.NEXT_PUBLIC_baseURL);
+  const canonicalURL = `${process.env.NEXT_PUBLIC_SITE_URL}/${router.pathname}`;
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
