@@ -3,7 +3,7 @@ import Link from 'next/link';
 import HeaderNavList from './HeaderNavList';
 
 const Header = () => (
-  <header className="flex items-center justify-between w-full h-24 p-5">
+  <header className="flex items-center justify-between w-full h-24 p-5 bg-red-100">
     <Link href="/">
       <a aria-label="Home Logo">AJB Next Starter</a>
     </Link>

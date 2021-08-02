@@ -8,18 +8,21 @@ const HeaderNavItems = () => {
 
   return (
     <>
-    {nav.items.map((item) => (
-      <li
-        className={`${
-          router.pathname === item.url ? 'border-b-2' : 'border-b-transparent'
-        }`}
-        key={item.title}
-      >
-        <Link href={item.url}>
-          <a>{item.title}</a>
-        </Link>
-      </li>
-    ))}
+      {nav.items.map((item) => (
+        <li key={item.title}>
+          <Link href={item.url}>
+            <a
+              className={`${
+                router.pathname === item.url
+                  ? 'text-red-500 '
+                  : 'hover:opacity-50'
+              } border-transparent `}
+            >
+              {item.title}
+            </a>
+          </Link>
+        </li>
+      ))}
     </>
   );
 };

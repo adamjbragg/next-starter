@@ -2,7 +2,7 @@
 import Link from 'next/link';
 
 const Footer = () => (
-  <footer className="flex flex-row items-center justify-between w-full h-24 px-5">
+  <footer className="flex flex-row items-center justify-between w-full h-24 px-5 bg-red-100">
     <p className="text-sm">{new Date().getFullYear()} © AJB Next Starter</p>
     <p className="text-sm">
       Website by:{' '}

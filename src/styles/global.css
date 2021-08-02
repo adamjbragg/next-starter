@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply xl:text-lg 2xl:text-xl;
+  }
+
+  h1 {
+    @apply text-3xl;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-xl font-bold text-red-500;
+  }
+
+  h4 {
+    @apply text-lg text-red-500;
+  }
+
+  a {
+    @apply border-b-2 border-red-500 hover:border-transparent transition-all duration-300 ease-in-out;
+  }
+}
