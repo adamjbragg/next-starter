@@ -1,2 +1,9 @@
+# *
 User-agent: *
+Allow: /
+
+# Host
+Host: https://website.com.au
+
+# Sitemaps
 Sitemap: https://website.com.au/sitemap.xml
