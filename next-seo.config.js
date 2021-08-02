@@ -2,12 +2,7 @@ export default {
   openGraph: {
     type: 'website',
     locale: 'en_AU',
-    url: process.env.baseURL,
-    site_name: 'site name',
-  },
-  twitter: {
-    handle: '@handle',
-    site: '@site',
-    cardType: 'summary_large_image',
+    url: process.env.SITE_URL,
+    site_name: 'AJB Next Starter',
   },
 };
