@@ -72,9 +72,9 @@ https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss
 
 ### To Do
 
-[ ] add add explaination for tailwind plugins
-[ ] add api pages to read me
-[ ] add consistant styling
-[ ] add in commonly used CMS settings? as branches?
-[ ] add next image example?
-[ ] add basic typograpical defaults
+- [ ] add add explaination for tailwind plugins
+- [ ] add api pages to read me
+- [ ] add consistant styling
+- [ ] add in commonly used CMS settings? as branches?
+- [ ] add next image example
+- [ ] add basic typograpical defaults
