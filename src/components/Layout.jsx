@@ -15,7 +15,7 @@ const Layout = ({
     <div className="flex flex-col items-center justify-center min-h-screen">
       <NextSeo
         title={pageTitle}
-        titleTemplate="AJB Next Start | %s"
+        titleTemplate="AJB Next Starter | %s"
         description={pageDescription}
         canonical={canonicalURL}
       />
