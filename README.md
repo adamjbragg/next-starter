@@ -16,7 +16,8 @@ Does not include set up for CMS.
 https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss
 
 - added `styles` folder with a `global.css` that includes tailwind imports
-- `JIT` is turn on, `TAILWIND_MODE=watch` has been added to the `dev` script in `package.json`
+- `JIT` is turn on, `TAILWIND_MODE=watch` has been added to the `dev` script in `package.json
+- includes aspect ratio plugin
 
 ### SRC Folder
 
@@ -27,7 +28,7 @@ https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss
 - absolute imports are configured in the `jsconfig.json` file.
   https://nextjs.org/docs/advanced-features/module-path-aliases
 
-### ESLint + Prettier
+### ESLint
 
 - ESLint is configured via https://nextjs.org/docs/basic-features/eslint
 - this needs more documentation
@@ -50,8 +51,7 @@ https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss
 
 ### Environment Variables
 
-- contains `.env` file to hold site url.
-- has a template for .env.local for secrets.
+- contains `.env.local.example` with example entries.
 - further reading: https://nextjs.org/docs/basic-features/environment-variables
 
 ### Sitemap
