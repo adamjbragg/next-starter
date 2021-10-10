@@ -3,12 +3,16 @@ import Link from 'next/link';
 import HeaderNavList from './HeaderNavList';
 
 const Header = () => (
-  <header className="flex items-center justify-between w-full h-24 p-5 bg-red-100">
-    <Link href="/">
-      <a aria-label="Home Logo">AJB Next Starter</a>
-    </Link>
-    <HeaderNavList />
-  </header>
+	<header className="w-full">
+		<div className="container px-5 mx-auto">
+			<div className="flex items-center justify-between py-5 mb-20 border-b">
+				<Link href="/">
+					<a aria-label="Home Logo">AJB Next Starter</a>
+				</Link>
+				<HeaderNavList />
+			</div>
+		</div>
+	</header>
 );
 
 export default Header;
