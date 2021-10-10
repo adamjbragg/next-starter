@@ -78,4 +78,4 @@ https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss
 - [ ] add in commonly used CMS settings? as branches?
 - [ ] add next image example
 - [ ] add basic typograpical defaults
-- [ ] be better at commit messages (and life?)
+- [ ] be better at commit messages
