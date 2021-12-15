@@ -20,9 +20,7 @@ const Layout = function ({
 				canonical={canonicalURL}
 			/>
 			<Header />
-			<main className="container flex flex-col justify-center flex-1 w-full px-5">
-				{children}
-			</main>
+			<main className="flex flex-col flex-1 w-full px-5">{children}</main>
 			<Footer />
 		</div>
 	);
