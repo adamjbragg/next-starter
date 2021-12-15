@@ -2,7 +2,6 @@
 import '../styles/global.css';
 import { useEffect } from 'react';
 import { DefaultSeo } from 'next-seo';
-import { LazyMotion, domAnimation } from 'framer-motion';
 import SEO from '../../next-seo.config';
 
 const App = function ({ Component, pageProps, router }) {
@@ -19,10 +18,10 @@ const App = function ({ Component, pageProps, router }) {
 	}, [router.events]);
 
 	return (
-		<LazyMotion features={domAnimation}>
+		<>
 			<DefaultSeo {...SEO} />
 			<Component key={router.asPath.split('?')[0]} {...pageProps} />
-		</LazyMotion>
+		</>
 	);
 };
 
