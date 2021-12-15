@@ -1,13 +1,13 @@
 import { useRouter } from 'next/router';
 import { NextSeo } from 'next-seo';
-import Header from './header/Header';
-import Footer from './Footer';
+import Header from './header';
+import Footer from './footer';
 
-const Layout = ({
+const Layout = function ({
 	children,
 	pageDescription = 'Page description',
 	pageTitle = 'Page Title',
-}) => {
+}) {
 	const router = useRouter();
 	const canonicalURL = `${process.env.NEXT_PUBLIC_SITE_URL}${router.pathname}`;
 
