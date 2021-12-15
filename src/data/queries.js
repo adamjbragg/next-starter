@@ -18,7 +18,7 @@ export const customImage = `
 
 // GROQ all pages
 export const allPagesQuery = `
-  *[_type in ["homePage", "page", "job"] && defined(slug.current)][].slug.current
+  *[_type in ["homePage", "page"] && defined(slug.current)][].slug.current
 `;
 // GROQ All Slugs
 export const allSlugsQuery = `

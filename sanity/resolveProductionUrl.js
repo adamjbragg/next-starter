@@ -1,7 +1,7 @@
 const previewSecret = 'site_preview'; // Copy the string you used for SANITY_PREVIEW_SECRET
 
 // Replace `remoteUrl` with your deployed Next.js site
-const remoteUrl = `https://sisucon.com.au/`;
+const remoteUrl = `https://website.com.au/`;
 const localUrl = `http://localhost:3000`;
 
 export default function resolveProductionUrl(doc) {

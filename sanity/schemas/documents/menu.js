@@ -3,7 +3,6 @@ export default {
 	title: 'Menu',
 	name: 'menu',
 	type: 'document',
-	__experimental_actions: ['update', /* 'delete', */ 'publish'],
 	fields: [
 		{
 			title: 'Title',

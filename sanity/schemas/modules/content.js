@@ -57,11 +57,6 @@ export default {
 							type: 'blockTitle',
 						},
 						{
-							title: 'Display Position',
-							name: 'position',
-							type: 'blockPosition',
-						},
-						{
 							title: 'Text Content',
 							name: 'blocks',
 							type: 'portableText',
