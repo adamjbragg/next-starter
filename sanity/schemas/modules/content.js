@@ -31,20 +31,6 @@ export default {
 							type: 'customImage',
 						},
 					],
-					preview: {
-						select: {
-							imageUrl: 'image.asset.url',
-							title: 'title',
-							position: 'position',
-						},
-						prepare({ imageUrl, title, position }) {
-							return {
-								imageUrl,
-								title,
-								subtitle: `Position: ${position}`,
-							};
-						},
-					},
 				},
 				{
 					title: 'Text Content',
@@ -62,18 +48,6 @@ export default {
 							type: 'portableText',
 						},
 					],
-					preview: {
-						select: {
-							title: 'title',
-							position: 'position',
-						},
-						prepare({ title, position }) {
-							return {
-								title,
-								subtitle: `Position: ${position}`,
-							};
-						},
-					},
 				},
 			],
 		},
