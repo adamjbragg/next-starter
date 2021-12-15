@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import HeaderNavList from './header-navigation';
 
-const Header = function () {
+const Header = function ({ data }) {
 	return (
 		<header className="w-full">
 			<div className="px-5 mx-auto">
@@ -9,7 +9,7 @@ const Header = function () {
 					<Link href="/">
 						<a aria-label="Home Logo">AJB Next Starter</a>
 					</Link>
-					<HeaderNavList />
+					<HeaderNavList menuItems={data} />
 				</div>
 			</div>
 		</header>

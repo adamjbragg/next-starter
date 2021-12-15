@@ -1,14 +1,15 @@
 // enables Absolute Imports and Module path aliases
 // https://nextjs.org/docs/advanced-features/module-path-aliases
 {
-  "compilerOptions": {
-    "jsx": "preserve",
-    "baseUrl": "./src",
-    "paths": {
-      "@/components/*": ["components/*"],
-      "@/hooks/*": ["hooks/*"],
-      "@/data/*": ["data/*"]
-    }
-  },
-  "exclude": ["node_modules", ".next"]
+	"compilerOptions": {
+		"jsx": "preserve",
+		"baseUrl": "./src",
+		"paths": {
+			"@/components/*": ["components/*"],
+			"@/hooks/*": ["hooks/*"],
+			"@/data/*": ["data/*"],
+			"@/lib/*": ["lib/*"]
+		}
+	},
+	"exclude": ["node_modules", ".next"]
 }
