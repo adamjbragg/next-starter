@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import nav from '@/data/nav.json';
 
-const HeaderNavList = () => {
+const HeaderNavList = function () {
 	const router = useRouter();
 
 	return (

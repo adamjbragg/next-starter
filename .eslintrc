@@ -1,11 +1,5 @@
 {
-	"extends": [
-		"airbnb",
-		"next",
-		"next/core-web-vitals",
-		"plugin:tailwind/recommended",
-		"prettier"
-	],
+	"extends": ["airbnb", "next", "next/core-web-vitals", "prettier"],
 	"env": {
 		"browser": true,
 		"node": true,

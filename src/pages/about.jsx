@@ -1,6 +1,6 @@
-import Layout from '@/components/Layout';
+import Layout from '@/components/layout';
 
-const About = () => {
+const About = function () {
 	const meta = {
 		pageTitle: 'About',
 		pageDescription: 'About Page description',
