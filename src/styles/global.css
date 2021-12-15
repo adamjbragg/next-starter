@@ -16,7 +16,8 @@
 		margin: 0;
 	}
 	html,
-	body {
+	body,
+	#__next {
 		height: 100%;
 	}
 	body {
