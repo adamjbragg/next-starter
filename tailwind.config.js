@@ -2,8 +2,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 module.exports = {
 	mode: 'jit',
-	purge: ['./public/**/*.html', './src/**/*.{js,jsx,ts,tsx,vue}'],
-	darkMode: false,
+	content: ['./public/**/*.html', './src/**/*.{js,jsx,ts,tsx,vue}'],
 	theme: {
 		extend: {},
 	},
