@@ -10,12 +10,7 @@ import homePage from './documents/homePage';
 import menu from './documents/menu';
 import page from './documents/page';
 
-// Modules
-import content from './modules/content';
-
 // Object
-import blockPosition from './objects/blockPosition';
-import blockTitle from './objects/blockTitle';
 import image from './objects/image';
 import link from './objects/link';
 import navLink from './objects/navLink';
@@ -37,12 +32,7 @@ export default createSchema({
 		menu,
 		page,
 
-		// Modules
-		content,
-
 		// Objects
-		blockPosition,
-		blockTitle,
 		image,
 		link,
 		navLink,

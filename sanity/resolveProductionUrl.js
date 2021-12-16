@@ -5,7 +5,8 @@ const remoteUrl = `https://website.com.au/`;
 const localUrl = `http://localhost:3000`;
 
 export default function resolveProductionUrl(doc) {
-	if (doc._type !== 'page' && doc._type !== 'homePage' && doc._type !== 'job') {
+	// only show preview option for pages or the homepage
+	if (doc._type !== 'page' && doc._type !== 'homePage') {
 		return null;
 	}
 
