@@ -76,6 +76,8 @@ https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss
 - `package.json` contains a `postbuild` step that builds the sitemap into the public folder.
 - also generates a robots.txt into the public folder
 
+- for Sanity don't use `next-sitemap` use the custom `sitemap.xml.jsx` page
+
 ### Custom Document
 
 - custom document added to add hardcoded html lang attribute
