@@ -25,6 +25,16 @@ export const allSlugsQuery = `
   *[defined(slug.current)][].slug.current
 `;
 
+// GROQ Page Querys
+// grabs the various page document types
+export const homePageQuery = groq`
+  *[_type == "homePage"]
+`;
+
+export const pageQuery = groq`
+  *[_type == "page" && slug.current == $slug]
+`;
+
 // GROQ Main Navigation
 export const mainNavQuery = `
   *[_type == "menu"][0]{
@@ -44,7 +54,6 @@ export const mainNavQuery = `
 // GROQ Site
 // grabs site and business settings, the menu and home page sections for the nav
 export const siteQuery = `{
-  "settings": *[_type == "siteSettings"][0],
   "businessSettings": *[_type == "businessDetails"][0],
   "menu": ${mainNavQuery}
 }`;

@@ -14,20 +14,10 @@ export default {
 		},
 		slugWithType(``, `title`),
 		{
-			name: 'order',
-			type: 'number',
-			title: 'Order',
-			hidden: true,
-		},
-		{
-			name: 'modules',
+			name: 'content',
+			title: 'Content',
 			type: 'array',
-			title: 'Page Sections',
-			of: [{ type: 'content' }],
-			options: {
-				editModal: 'fullscreen',
-			},
-			validation: (Rule) => Rule.required(),
+			of: [{ type: 'block' }],
 		},
 		{
 			name: 'description',
@@ -38,16 +28,4 @@ export default {
 			validation: (Rule) => Rule.required(),
 		},
 	],
-	orderings: [
-		{
-			title: 'Manual order',
-			name: 'manualOrder',
-			by: [{ field: 'order', direction: 'asc' }],
-		},
-	],
-	preview: {
-		select: {
-			title: 'title',
-		},
-	},
 };

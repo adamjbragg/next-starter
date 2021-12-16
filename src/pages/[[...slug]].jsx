@@ -1,9 +1,13 @@
 import { filterDataToSingleItem } from 'utilities/filterDataToSingleItem';
 import { getQueryFromSlug } from 'utilities/getQueryFromSlug';
+import dynamic from 'next/dynamic';
+import { serializers } from 'utilities/serializers';
 import Layout from '@/components/layout';
 import { allPagesQuery, siteQuery } from '@/data/queries';
 import { usePreviewSubscription } from '@/lib/sanity';
 import { sanityClient, getClient } from '@/lib/sanity.server';
+
+const BlockContent = dynamic(() => import('@sanity/block-content-to-react'));
 
 const Page = function ({ site, data, preview }) {
 	const { data: previewData } = usePreviewSubscription(data?.query, {
@@ -13,10 +17,11 @@ const Page = function ({ site, data, preview }) {
 		// The passed-down preview context determines whether this function does anything
 		enabled: preview,
 	});
-
 	const page = filterDataToSingleItem(previewData, preview);
-	// console.log('Page', page);
-	console.log('Site', site);
+
+	// DEBUG
+	console.log('page', page);
+	console.log('site', site);
 
 	// SEO meta content need to add OG image and page description from
 	const meta = {
@@ -34,6 +39,7 @@ const Page = function ({ site, data, preview }) {
 			pageDescription={meta.pageDescription}
 		>
 			<h1>{page.title}</h1>
+			<BlockContent blocks={page.content} serializers={serializers} />
 		</Layout>
 	);
 };

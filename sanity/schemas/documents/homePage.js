@@ -4,31 +4,25 @@ export default {
 	name: 'homePage',
 	type: 'document',
 	title: 'Home Page',
-	__experimental_actions: ['create', 'update', /* 'delete', */ 'publish'],
+	// __experimental_actions: ['create', 'update', /* 'delete', */ 'publish'],
 	fields: [
 		{
 			name: 'title',
 			type: 'string',
 			title: 'Title',
-			hidden: true,
+			// hidden: true,
 		},
 		{
 			name: 'slug',
 			title: 'Slug',
 			type: 'slug',
-			hidden: true,
+			// hidden: true,
 		},
 		{
-			name: 'modules',
+			name: 'content',
+			title: 'Content',
 			type: 'array',
-			title: 'Page Sections',
-			description:
-				'The titles of these sections will be automatically added to the header navigation.',
-			options: {
-				editModal: 'fullscreen',
-			},
-			of: [{ type: 'content' }],
-			validation: (Rule) => Rule.required(),
+			of: [{ type: 'block' }],
 		},
 		{
 			name: 'description',
@@ -39,9 +33,4 @@ export default {
 			validation: (Rule) => Rule.required(),
 		},
 	],
-	preview: {
-		select: {
-			title: 'title',
-		},
-	},
 };
