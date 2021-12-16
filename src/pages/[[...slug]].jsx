@@ -2,7 +2,7 @@ import { filterDataToSingleItem } from 'utilities/filterDataToSingleItem';
 import { getQueryFromSlug } from 'utilities/getQueryFromSlug';
 import dynamic from 'next/dynamic';
 import { serializers } from 'utilities/serializers';
-import Layout from '@/components/layout';
+import Layout from '@/components/site-layout';
 import { allPagesQuery, siteQuery } from '@/data/queries';
 import { usePreviewSubscription } from '@/lib/sanity';
 import { sanityClient, getClient } from '@/lib/sanity.server';

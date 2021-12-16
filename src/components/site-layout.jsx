@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import { NextSeo } from 'next-seo';
-import Header from './header';
-import Footer from './footer';
+import Header from './site-header';
+import Footer from './site-footer';
 import Alert from './alert';
 
 const Layout = function ({
