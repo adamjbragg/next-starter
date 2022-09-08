@@ -16,7 +16,6 @@ Does not include set up for CMS.
 https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss
 
 - added `styles` folder with a `global.css` that includes tailwind imports
-- `JIT` is turn on, `TAILWIND_MODE=watch` has been added to the `dev` script in `package.json
 - includes aspect ratio plugin
 
 ### SRC Folder
