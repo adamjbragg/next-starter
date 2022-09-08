@@ -7,6 +7,7 @@
 		"jest": true
 	},
 	"rules": {
+		"@next/next/no-img-element": 0,
 		"no-debugger": 0,
 		"no-alert": 0,
 		"no-await-in-loop": 0,
@@ -100,5 +101,5 @@
 		"react-hooks/rules-of-hooks": "error",
 		"react-hooks/exhaustive-deps": "warn"
 	},
-	"plugins": ["html", "react-hooks", "react"]
+	"plugins": ["html", "react"]
 }
