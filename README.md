@@ -5,9 +5,9 @@ Does not include set up for CMS.
 
 ## Setup
 
-- run `npm install`
-- find and replace `https://website.com.au`
-- find and replace `AJB Next Starter`
+- run `pnpm install`
+- update `/src/data/general.json`
+- update urls in `/robots.txt`
 
 ## Features
 
