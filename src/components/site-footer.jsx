@@ -1,17 +1,19 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import Link from 'next/link';
+import general from '@/data/general.json';
 
 const Footer = function () {
 	return (
 		<footer className="w-full text-sm">
 			<div className="px-5 mx-auto">
 				<div className="flex flex-row items-center justify-between py-5 mx-auto border-t">
-					<p>{new Date().getFullYear()} © AJB Next Starter</p>
+					<p>
+						{new Date().getFullYear()} © {general.siteTitle}
+					</p>
 					<p>
 						Website by:
-						<Link href="https://adamjbragg.net/">
+						<Link href={general.siteCreditUrl}>
 							<a rel="noreferrer" target="_blank">
-								Adam J Bragg
+								{general.siteCredit}
 							</a>
 						</Link>
 					</p>

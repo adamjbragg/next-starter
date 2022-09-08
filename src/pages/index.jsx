@@ -9,7 +9,7 @@ const Home = function () {
 	return (
 		<Layout pageTitle={meta.pageTitle} pageDescription={meta.pageDescription}>
 			<h1>AJB Next.js starter!</h1>
-			<p>This is the page content</p>
+			<p>Content will live here.</p>
 		</Layout>
 	);
 };
