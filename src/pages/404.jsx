@@ -1,4 +1,4 @@
-import Layout from '@/components/site-layout';
+import Layout from '@/components/Layout';
 
 const FourOhFour = function ({ site }) {
 	const meta = {

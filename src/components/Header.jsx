@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import HeaderNavList from './header-navigation';
+import HeaderNavList from './Nav';
 import general from '@/data/general.json';
 
 const Header = function () {
