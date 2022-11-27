@@ -10,16 +10,15 @@ const HeaderNavList = function () {
 		<ul className="flex text-justify space-x-5">
 			{nav.items.map((item) => (
 				<li key={item.title}>
-					<Link href={item.url}>
-						<a
-							className={`${
-								router.pathname === item.url
-									? 'text-red-500 '
-									: 'hover:opacity-50'
-							} border-transparent `}
-						>
-							{item.title}
-						</a>
+					<Link
+						href={item.url}
+						className={`${
+							router.pathname === item.url
+								? 'text-red-500 '
+								: 'hover:opacity-50'
+						} border-transparent `}
+					>
+						{item.title}
 					</Link>
 				</li>
 			))}

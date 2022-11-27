@@ -7,8 +7,8 @@ const Header = function () {
 		<header className="w-full">
 			<div className="px-5 mx-auto">
 				<div className="flex items-center justify-between py-5 border-b">
-					<Link href="/">
-						<a aria-label="Home Logo">{general.siteTitle}</a>
+					<Link href="/" aria-label="Home Logo">
+						{general.siteTitle}
 					</Link>
 					<HeaderNavList />
 				</div>

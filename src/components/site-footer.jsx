@@ -11,10 +11,8 @@ const Footer = function () {
 					</p>
 					<p>
 						Website by:
-						<Link href={general.siteCreditUrl}>
-							<a rel="noreferrer" target="_blank">
-								{general.siteCredit}
-							</a>
+						<Link href={general.siteCreditUrl} rel="noreferrer" target="_blank">
+							{general.siteCredit}
 						</Link>
 					</p>
 				</div>
